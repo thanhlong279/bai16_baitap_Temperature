@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        celsius;
+        constructor(celsius) {
+            this.celcius = celsius;
+        }
+        getCelsius(){
+            return this.celsius;
+        }
+        setCelsius(){
+            return this.celcius = celsius;
+        }
+        toKelvin(){
+            return this.celsius + 273.15;
+        }
+        toF(){
+            return (9/5*this.celsius) +32
+        }
+    }
+    let convert = new Temperature(25);
+    let f = convert.toF();
+    let kelvin = convert.toKelvin();
+    document.write("25 do C = :" + f + " do F" + "<br>");
+    document.write("25 do C = :" + kelvin + " do Kelvin");
+</script>
+</body>
+</html>
